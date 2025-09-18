@@ -17,17 +17,24 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Install mamba
+        uses: mamba-org/setup-micromamba@v1
         with:
-          node-version: 20
-          cache: npm
+          micromamba-version: '1.5.8-0'
+          environment-file: build-environment.yml
+          cache-environment: true
 
       - name: Install dependencies
+        shell: bash -l {0}
         run: npm ci
 
       - name: Build slides
+        shell: bash -l {0}
         run: npm run build
+
+      - name: Build the JupyterLite site
+        shell: bash -l {0}
+        run: jupyter lite build --contents litecontent --output-dir dist/lite
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
