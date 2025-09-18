@@ -1,0 +1,68 @@
+{
+  "layerTree": [
+    "a82ef521-e727-4209-a5a0-145d66f18a06",
+    "f12a8dfe-4674-43e7-a649-cd49ee83eb34"
+  ],
+  "layers": {
+    "a82ef521-e727-4209-a5a0-145d66f18a06": {
+      "name": "OpenStreetMap.Mapnik Layer",
+      "parameters": {
+        "opacity": 1.0,
+        "source": "ceef4036-b757-44bf-8a21-42c6c99dab72"
+      },
+      "type": "RasterLayer",
+      "visible": true
+    },
+    "f12a8dfe-4674-43e7-a649-cd49ee83eb34": {
+      "name": "Custom Hillshade Layer",
+      "parameters": {
+        "shadowColor": "#473B24",
+        "source": "e87bb91a-ff2a-485b-bf0e-14b3b848955a"
+      },
+      "type": "HillshadeLayer",
+      "visible": true
+    }
+  },
+  "metadata": {},
+  "options": {
+    "bearing": 0.0,
+    "extent": [
+      1243848.3593370197,
+      5969949.2382145105,
+      1302647.7414816194,
+      5998387.429956145
+    ],
+    "latitude": 47.25726805100891,
+    "longitude": 11.437781841580746,
+    "pitch": 59.00000000000003,
+    "projection": "EPSG:3857",
+    "zoom": 12.047497460381734
+  },
+  "schemaVersion": "0.5.0",
+  "sources": {
+    "ceef4036-b757-44bf-8a21-42c6c99dab72": {
+      "name": "OpenStreetMap.Mapnik",
+      "parameters": {
+        "attribution": "(C) OpenStreetMap contributors",
+        "interpolate": false,
+        "maxZoom": 19.0,
+        "minZoom": 0.0,
+        "provider": "OpenStreetMap",
+        "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "urlParameters": {}
+      },
+      "type": "RasterSource"
+    },
+    "e87bb91a-ff2a-485b-bf0e-14b3b848955a": {
+      "name": "Custom Hillshade Layer Source",
+      "parameters": {
+        "encoding": "mapbox",
+        "interpolate": false,
+        "tileSize": 512.0,
+        "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+        "urlParameters": {}
+      },
+      "type": "RasterDemSource"
+    }
+  }
+}
