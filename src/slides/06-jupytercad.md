@@ -105,7 +105,7 @@
 <section>
   <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 1rem;">
     <a
-      href="https://jupytercad.github.io/JupyterCAD/lab/index.html"
+      href="./lite/lab"
       target="_blank"
       style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit;"
     >
@@ -119,7 +119,7 @@
   </div>
 
   <iframe
-    src="https://jupytercad.github.io/JupyterCAD/lab/index.html"
+    src="./lite/lab"
     style="
       border: none;
       width: 100vw;

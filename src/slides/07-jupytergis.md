@@ -113,7 +113,7 @@
 <section>
   <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 1rem;">
     <a
-      href="https://jupytergis.readthedocs.io/en/latest/lite/lab/"
+      href="./lite/lab"
       target="_blank"
       style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit;"
     >
@@ -127,7 +127,7 @@
   </div>
 
   <iframe
-    src="https://jupytergis.readthedocs.io/en/latest/lite/lab/"
+    src="./lite/lab"
     style="
       border: none;
       width: 100vw;
